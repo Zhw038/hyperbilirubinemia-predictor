@@ -55,7 +55,7 @@ ua = st.number_input("pre.UA:", min_value=0, max_value=3000, value=488)
 acct = st.number_input("Aortic.occlusion.time:", min_value=0, max_value=1000, value=88)
 
 # surgery.time: numerical input
-st = st.number_input("surgery.time:", min_value=0, max_value=3000, value=288)
+sgt = st.number_input("surgery.time:", min_value=0, max_value=3000, value=288)
 
 # anes.time: numerical input
 at = st.number_input("anes.time:", min_value=0, max_value=2000, value=285)
@@ -84,7 +84,7 @@ albt = st.selectbox("Alb.t:", options=[0, 1], format_func=lambda x: "Yes" if x =
 
 
 
-feature_values = [weight,height,pvd,ph,pi,tb,hb,plt,inr,ua,acct,st,at,sevo,dex,bl,urine,rbct,pltt,albt]
+feature_values = [weight,height,pvd,ph,pi,tb,hb,plt,inr,ua,acct,sgt,at,sevo,dex,bl,urine,rbct,pltt,albt]
 features = np.array([feature_values])
 
 
