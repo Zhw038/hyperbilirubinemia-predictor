@@ -37,7 +37,7 @@ ph = st.selectbox("PH:", options=[0, 1], format_func=lambda x: "Yes" if x == 1 e
 pi = st.selectbox("Preoperative.intubation:", options=[0, 1], format_func=lambda x: "Yes" if x == 1 else "NO")
 
 # TBIL.pre: numerical input
-tb = st.number_input("TBIL.pre:", min_value=0.0, max_value=100,0, value=17.2)
+tb = st.number_input("TBIL.pre:", min_value=0.0, max_value=100.0, value=17.2)
 
 # Hb: numerical input
 hb = st.number_input("Hb:", min_value=0, max_value=300, value=138)
