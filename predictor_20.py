@@ -79,7 +79,7 @@ rbct = st.number_input("RBC.t:", min_value=0, max_value=10000, value=600)
 pltt = st.number_input("PLT.t:", min_value=0.0, max_value=10.0, value=1)
 
 # Alb.t: categorical selection
-albt = st.number_input("Alb.t:", options=[0, 1], format_func=lambda x: "Yes" if x == 1 else "NO")
+albt = st.selectbox("Alb.t:", options=[0, 1], format_func=lambda x: "Yes" if x == 1 else "NO")
 
 
 
