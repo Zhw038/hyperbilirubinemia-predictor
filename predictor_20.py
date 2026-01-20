@@ -14,8 +14,8 @@ X_test = pd.read_csv('X_test-20.csv')
 
 
 feature_names = [
-    "weight", "height", "PVD", "PH", "Preoperative.intubation", "TBIL.pre", "Hb", "PLT", "INR", "pre.UA",
-    , "Aortic.occlusion.time", "surgery.time", "anes.time", "Sevoflurane", "Dexmedetomidine", "Blood.loss", "Urine", "RBC.t", "PLT.t", "Alb.t"
+    "weight", "height", "PVD", "PH", "Preoperative.intubation", "TBIL.pre", "Hb", "PLT", "INR", "pre.UA","Aortic.occlusion.time", 
+    "surgery.time", "anes.time", "Sevoflurane", "Dexmedetomidine", "Blood.loss", "Urine", "RBC.t", "PLT.t", "Alb.t"
 ]
 
 # Streamlit user interface
