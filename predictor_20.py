@@ -22,7 +22,7 @@ feature_names = [
 st.title("Hyperbilirubinemia after on-pump Cardiac Surgery Predictor")
 
 # weight: numerical input
-weight = st.number_input("weight:", min_value=0.0, max_value=500, value=66.6)
+weight = st.number_input("weight:", min_value=0.0, max_value=500.0, value=66.6)
 
 # height: numerical input
 height = st.number_input("height:", min_value=0, max_value=300, value=155)
