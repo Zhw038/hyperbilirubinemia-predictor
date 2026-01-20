@@ -58,7 +58,7 @@ acct = st.number_input("Aortic.occlusion.time:", min_value=0, max_value=1000, va
 st = st.number_input("surgery.time:", min_value=0, max_value=3000, value=288)
 
 # anes.time: numerical input
-at = st.number_input("anes.time:", min_value=0, max_value=3000, value=285)
+at = st.number_input("anes.time:", min_value=0, max_value=2000, value=285)
 
 # Sevoflurane: categorical selection
 sevo = st.selectbox("Sevoflurane:", options=[0, 1], format_func=lambda x: "Yes" if x == 1 else "NO")
