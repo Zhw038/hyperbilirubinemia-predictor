@@ -42,8 +42,8 @@ tb = st.number_input("TBIL.pre:", min_value=0.0, max_value=100.0, value=17.2)
 # Hb: numerical input
 hb = st.number_input("Hb:", min_value=0, max_value=300, value=138)
 
-# PLT: numerical input
-plt = st.number_input("PLT:", min_value=0, max_value=1000, value=188)
+# PLT_m: numerical input
+plt_m = st.number_input("PLT:", min_value=0, max_value=1000, value=188)
 
 # INR: numerical input
 inr = st.number_input("INR:", min_value=0.00, max_value=10.00, value=1.72)
@@ -84,7 +84,7 @@ albt = st.selectbox("Alb.t:", options=[0, 1], format_func=lambda x: "Yes" if x =
 
 
 
-feature_values = [weight,height,pvd,ph,pi,tb,hb,plt,inr,ua,acct,sgt,at,sevo,dex,bl,urine,rbct,pltt,albt]
+feature_values = [weight,height,pvd,ph,pi,tb,hb,plt_m,inr,ua,acct,sgt,at,sevo,dex,bl,urine,rbct,pltt,albt]
 features = np.array([feature_values])
 
 
