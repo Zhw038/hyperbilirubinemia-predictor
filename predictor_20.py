@@ -22,10 +22,10 @@ feature_names = [
 st.title("Hyperbilirubinemia after on-pump Cardiac Surgery Predictor")
 
 # weight: numerical input
-weight = st.number_input("weight:", min_value=0.0, max_value=500.0, value=66.6)
+weight = st.number_input("weight:", min_value=20.0, max_value=130.0, value=66.6)
 
 # height: numerical input
-height = st.number_input("height:", min_value=0, max_value=300, value=155)
+height = st.number_input("height:", min_value=100, max_value=200, value=155)
 
 # PVD: categorical selection
 pvd = st.selectbox("PVD:", options=[0, 1], format_func=lambda x: "Yes" if x == 1 else "NO")
@@ -37,28 +37,28 @@ ph = st.selectbox("PH:", options=[0, 1], format_func=lambda x: "Yes" if x == 1 e
 pi = st.selectbox("Preoperative.intubation:", options=[0, 1], format_func=lambda x: "Yes" if x == 1 else "NO")
 
 # TBIL.pre: numerical input
-tb = st.number_input("TBIL.pre:", min_value=0.0, max_value=100.0, value=17.2)
+tb = st.number_input("TBIL.pre:", min_value=0.0, max_value=1000.0, value=17.2)
 
 # Hb: numerical input
-hb = st.number_input("Hb:", min_value=0, max_value=300, value=138)
+hb = st.number_input("Hb:", min_value=0, max_value=200, value=138)
 
 # PLT_m: numerical input
-plt_m = st.number_input("PLT:", min_value=0, max_value=1000, value=188)
+plt_m = st.number_input("PLT:", min_value=0, max_value=500, value=188)
 
 # INR: numerical input
 inr = st.number_input("INR:", min_value=0.00, max_value=10.00, value=1.72)
 
 # pre.UA: numerical input
-ua = st.number_input("pre.UA:", min_value=0, max_value=3000, value=488)
+ua = st.number_input("pre.UA:", min_value=0, max_value=1000, value=488)
 
 # Aortic.occlusion.time: numerical input
-acct = st.number_input("Aortic.occlusion.time:", min_value=0, max_value=1000, value=88)
+acct = st.number_input("Aortic.occlusion.time:", min_value=0, max_value=240, value=88)
 
 # surgery.time: numerical input
-sgt = st.number_input("surgery.time:", min_value=0, max_value=3000, value=288)
+sgt = st.number_input("surgery.time:", min_value=0, max_value=1000, value=288)
 
 # anes.time: numerical input
-at = st.number_input("anes.time:", min_value=0, max_value=2000, value=285)
+at = st.number_input("anes.time:", min_value=0, max_value=1200, value=285)
 
 # Sevoflurane: categorical selection
 sevo = st.selectbox("Sevoflurane:", options=[0, 1], format_func=lambda x: "Yes" if x == 1 else "NO")
@@ -67,16 +67,16 @@ sevo = st.selectbox("Sevoflurane:", options=[0, 1], format_func=lambda x: "Yes" 
 dex = st.selectbox("Dexmedetomidine:", options=[0, 1], format_func=lambda x: "Yes" if x == 1 else "NO")
 
 # Blood.loss: numerical input
-bl = st.number_input("Blood.loss:", min_value=0, max_value=10000, value=800)
+bl = st.number_input("Blood.loss:", min_value=0, max_value=8000, value=800)
 
 # Urine: numerical input
-urine = st.number_input("Urine:", min_value=0, max_value=10000, value=1000)
+urine = st.number_input("Urine:", min_value=0, max_value=8000, value=1000)
 
 # RBC.t: numerical input
-rbct = st.number_input("RBC.t:", min_value=0, max_value=10000, value=600)
+rbct = st.number_input("RBC.t:", min_value=0, max_value=3000, value=600)
 
 # PLT.t: numerical input
-pltt = st.number_input("PLT.t:", min_value=0.0, max_value=10.0, value=1.0)
+pltt = st.number_input("PLT.t:", min_value=0.0, max_value=4.0, value=1.0)
 
 # Alb.t: categorical selection
 albt = st.selectbox("Alb.t:", options=[0, 1], format_func=lambda x: "Yes" if x == 1 else "NO")
